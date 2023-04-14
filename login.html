@@ -6,7 +6,25 @@
   <link href="styles/general.css" rel="stylesheet" type="text/css">
   <title>Bienvenidos - Login</title>
 </head>
-<body> 
+<body>
+  <!-- Slider, imágenes -->
+  <div class="slider">
+    <img id="img-1" src="images/Market18_B.png" alt="Market18"/>
+    <img id="img-2" src="images/Market18_Bogota.jpg" alt="Bogota"/>
+    <img id="img-3" src="images/Market18_Medellin.jpg" alt="Bogota"/>
+    <img id="img-4" src="images/Market18_Cali.jpg" alt="Bogota"/>
+    <img id="img-5" src="images/Market18_Barranquilla.jpg" alt="Bogota"/>
+  </div>
+  <!-- Slider, imágenes -->
+  <!-- Slider, flechas -->
+  <div class="navigation-button">
+    <span class="dot active" onclick="changeSlide(0)"></span>
+    <span class="dot"        onclick="changeSlide(1)"></span>
+    <span class="dot"        onclick="changeSlide(2)"></span>
+    <span class="dot"        onclick="changeSlide(3)"></span>
+    <span class="dot"        onclick="changeSlide(4)"></span>
+  </div>
+  <!-- Slider, flechas -->
   <div id="login-box">
     <h1>Bienvenido</h1>
     <h2>Ingresa tus datos para iniciar sesión</h2>
@@ -43,4 +61,6 @@
       </div>
     </div>
   </footer>
+  <script type="text/javascript" src="js/slider.js"></script>
+</body>
 </html>
