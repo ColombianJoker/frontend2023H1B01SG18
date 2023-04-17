@@ -20,3 +20,24 @@ function changeSlide(n) {
     imgs[currentImg].style.opacity = 1;
     dots[currentImg].className += ' active';
 }
+
+var homeImgs = document.querySelectorAll('.homeproducts img');
+var homeImg = 0; // Índice de la primera imagen
+
+var homeTimer = setInterval(changeHomeSlide, 4000);
+
+function changeHomeSlide(n) {
+    for (var i=0; i<homeImgs.length; i++ ) {
+        homeImgs[i].style.opacity = 0;
+        dots[i].className = dots[i].className.replace(' active', '');
+    }
+    homeImg = (homeImg + 1) % homeImgs.length; // cambiar el apuntador a la imagen
+    if ( n!= undefined ) {
+        clearInterval(hometimer);
+        homeTimer = setInterval(changeHomeSlide, homeinterval);
+        homeImg = n;
+    }
+
+    homeImgs[homeImg].style.opacity = 1;
+    dots[homeImg].className += ' active';
+}

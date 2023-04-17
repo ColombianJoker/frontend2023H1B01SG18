@@ -25,16 +25,17 @@
   </div>
   <!-- Slider, flechas -->
     <h1>Administación de productos</h1>
-<div id="product-table">
+  <div id="fondo">
+  <div id="product-table">
     <div class="header">
-        <button class="add-button">Agregar</button>
-        <div class="search-container">
-          <input type="text" placeholder="Buscar...">
-          <button class="search-button"><i class="fa fa-search"></i></button>
-        </div>
-      </div>
+      <button class="add-button">Agregar</button>
+      <div class="search-container">
+        <input type="text" placeholder="Buscar...">
+        <button class="search-button"><i class="fa fa-search"></i></button>
+      </div> <!-- add-button -->
+    </div> <!-- header -->
     <table>
-      <thead>
+      <thead> <!-- títulos de columna -->
         <tr>
           <th>Código</th>
           <th>Producto</th>
@@ -43,34 +44,40 @@
           <th>Existencia</th>
           <th>Acciones</th>
         </tr>
-      </thead>
-      <tbody>
-        <!-- Los productos se agregarán aquí dinámicamente -->
+      </thead> <!-- títulos de columna -->
+      <tbody> <!-- Los productos se agregarán aquí dinámicamente -->
         <tr>
-            <td>1221</td>
-            <td>Aceite de  oliva</td>
-            <td>$79.995</td>
-            <td>0.25</td>
-            <td>100</td>
-            <td>
-              <button id="btn-edit-1">Editar</button>
-              <button id="btn-delete-1">Eliminar</button>
-            </td>
-          </tr>
-          <tr>
-            <td>1222</td>
-            <td>Azucar Morena</td>
-            <td>$12.595</td>
-            <td>0.25</td>
-            <td>500</td>
-            <td>
-              <button id="btn-edit-1">Editar</button>
-              <button id="btn-delete-1">Eliminar</button>
-            </td>
-          </tr>
-      </tbody>
+          <td>1221</td>
+          <td>Aceite de  oliva</td>
+          <td>$79.995</td>
+          <td>18 %</td>
+          <td>100</td>
+          <td>
+            <button class="btn-edit" id="btn-edit-1">Editar</button>
+            <button class="btn-delete" id="btn-delete-1">Eliminar</button>
+          </td>
+        </tr>
+        <tr>
+          <td>1222</td>
+          <td>Azucar Morena</td>
+          <td>$12.595</td>
+          <td>18 %</td>
+          <td>500</td>
+          <td>
+            <button class="btn-edit" id="btn-edit-2">Editar</button>
+            <button class="btn-delete" id="btn-delete-2">Eliminar</button>
+          </td>
+        </tr>
+        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr> <!-- vacía -->
+        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr> <!-- vacía -->
+        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr> <!-- vacía -->
+        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr> <!-- vacía -->
+        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr> <!-- vacía -->
+        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr> <!-- vacía -->
+      </tbody> <!-- Los productos se agregarán aquí dinámicamente -->
     </table>
-</div>
+  </div> <!-- product-table -->
+</div> <!-- fondo -->
 </body>
 <!-- slider -->
 <script type="text/javascript" src="js/slider.js"></script>   <!-- slider -->                                                                                                                                                                                                                                                                       

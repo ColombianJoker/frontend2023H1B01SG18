@@ -1,0 +1,52 @@
+html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .backgrnd {
+    position: relative;
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+    border:1px solid;
+    color: white;
+    background-image: url("https://images.pexels.com/photos/5591663/pexels-photo-5591663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-color: #cccccc;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header {
+    position: absolute;
+    margin-top: -10px;
+    background-color: #d81b60 ;
+    left:0;
+    right:0;
+    margin:15px;
+    padding:10px;
+    font-size: large;
+  }
+
+  .footer {
+    position: absolute;
+    background-color: #00bfa5;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:15px;
+    padding:10px;
+    color: white;
+    font-size: large;
+  
+  }
+
+  .center {
+ 
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+  
+}
