@@ -281,3 +281,31 @@ p.descuento:hover {
   background-color: #d43226;
   color: white;
 }
+
+p.home {
+  text-align: center;
+  font-size: 48;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+p.home:hover {
+  background-color: black;
+  color: white;
+}
+
+
+button[type="submit"].home-comprar-but {
+  background-color: white;
+  color: #999;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+button[type="submit"].home-comprar-but:hover {
+  /* background-color: #9e1d14; */
+  background-color: #d43226;
+  color: white;
+}
