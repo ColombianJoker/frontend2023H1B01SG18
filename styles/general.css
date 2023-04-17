@@ -1,9 +1,41 @@
+/* Estilos para todo */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #999999;
+  max-width: 500px;
+  margin: 100px auto;
+}
+
+.box img {
+  width: 95%;
+  height: 360px;
+  margin: auto;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+}
+
+/* Estilos para todo */
+
 /* BEGIN Estilos de Mariam: login.html */
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
   }
-  #login-box {
+
+  #login-box, .container {
     width: 400px;
     background-color: #fff;
     border-radius: 5px;
@@ -12,15 +44,24 @@ body {
     padding: 20px;
   }
  
-  input[type="text"], input[type="password"] {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  textarea
+   {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    padding: 12px;
+    resize: vertical;
+
   }
-  input[type="submit"] {
+
+  input[type="submit"],
+  button[type="submit"] {
     background-color: #d43226;
     color: #fff;
     padding: 10px;
@@ -29,12 +70,21 @@ body {
     cursor: pointer;
     width: 100%;
   }
-  input[type="submit"]:hover {
-    background-color: #9e1d14;
+  input[type="submit"]:hover,
+  button[type="submit"]:hover {
+    /* background-color: #9e1d14; */
+    background-color: #000000;
   }
+  
   a {
     text-decoration: none;
     color: #0077cc;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
   footer {
@@ -57,9 +107,9 @@ body {
     transition: color 0.3s;
   }
   
-  .left-column a:hover {
-    color: #0077cc;
-  }
+  /* .left-column a:hover {
+    color: #d43226;
+  } */
   
   .right-column {
     display: flex;
@@ -67,6 +117,10 @@ body {
     width: 30%;
     flex-direction: column;
     align-items: flex-end;
+  }
+
+  a:hover {
+    color: #d43226;
   }
   
   .social-icons a {
@@ -83,7 +137,7 @@ body {
   }
   
   .social-icons a:hover {
-    background-color: #0077cc;
+    background-color: #d43226;
     color: #fff;
   }
   
@@ -141,3 +195,19 @@ body {
     background-color: #717171;
   }
 /* END Estilos de Ramón: slider.html */
+
+/* General */
+
+screen and (max-width: 600px) {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    margin-top: 0;
+  }
+  button[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* General */

@@ -4,90 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="styles/general.css" rel="stylesheet" type="text/css">
-    <title>Cont&aacute</title>
-      <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #f2f2f2;
-      }
-
-      .container {
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px #999999;
-        max-width: 500px;
-        margin: 100px auto;
-      }
-
-      h1 {
-        text-align: center;
-      }
-
-      input[type="text"],
-      input[type="email"],
-      textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        resize: vertical;
-      }
-
-      label {
-        font-weight: bold;
-      }
-
-      button[type="submit"] {
-        background-color: #FF0000;
-        color: #ffffff;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        float: right;
-      }
-
-      button[type="submit"]:hover {
-        background-color: #45a049;
-      }
-
-      .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-
-      screen and (max-width: 600px) {
-        input[type="text"],
-        input[type="email"],
-        textarea {
-          width: 100%;
-          margin-top: 0;
-        }
-        button[type="submit"] {
-          width: 100%;
-          margin-top: 0;
-        }
-      }
-
-  input[type="submit"] {
-    background-color: #d43226;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-  }
-  input[type="submit"]:hover {
-    background-color: #9e1d14;
-  }      
-    </style>
+    <title>Cont&aacute;ctenos</title>
   </head>
   <body>
     <!-- Slider, imágenes -->
@@ -112,16 +29,16 @@
       <h1>Contáctenos</h1>
       <form action="#" method="post">
         <div class="clearfix">
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" required />
+          <!-- <label for="nombre">Nombre</label> -->
+          <input type="text" id="nombre" name="nombre" required placeholder="Nombres"/>
         </div>
         <div class="clearfix">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+          <!-- <label for="email">Email</label> -->
+          <input type="email" id="email" name="email" required placeholder="Correo"/>
         </div>
         <div class="clearfix">
           <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" required></textarea>
+          <textarea id="mensaje" name="mensaje" required placeholder="Mensaje"></textarea>
         </div>
         <div class="clearfix">
           <button type="submit">Enviar</button>
