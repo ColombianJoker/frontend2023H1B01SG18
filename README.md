@@ -7,7 +7,6 @@ _Desarrollo Front End 2023-H1 B01_
 Tutor: **Ing. John Olarte**
 Subgrupo 18:
   + Mariam Ortiz Ceballos         xxx@poligran.edu.co
-  + Hugo Armando Arcinegas        yyy@poligran.edu.co
   + Ramón Barrios Láscar          elbarrios1@poligran.edu.co
   + Óscar Perdomo Barón           zzz@poligran.edu.co
   + Jordy Mahecha Escárraga       nnn@poligran.edu.co
