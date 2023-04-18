@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link href="styles/adminproductos.css" rel="stylesheet" type="text/css">
+  <link href="styles/adminProductos.css" rel="stylesheet" type="text/css">
   <link href="styles/general.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -23,28 +23,18 @@
     <span class="dot"        onclick="changeSlide(3)"></span>
     <span class="dot"        onclick="changeSlide(4)"></span>
   </div>
-  <nav>
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Ofertas</a></li>
-      <li><a href="#">Productos</a></li>
-      <li><a href="#">Administración</a></li>
-      <li><a href="#">Contactanos</a></li>
-    </ul>
-  </nav>
   <!-- Slider, flechas -->
     <h1>Administación de productos</h1>
-  <div id="fondo">
-  <div id="product-table">
+<div id="product-table">
     <div class="header">
-      <button class="add-button">Agregar</button>
-      <div class="search-container">
-        <input type="text" placeholder="Buscar...">
-        <button class="search-button"><i class="fa fa-search"></i></button>
-      </div> <!-- add-button -->
-    </div> <!-- header -->
+        <button class="add-button">Agregar</button>
+        <div class="search-container">
+          <input type="text" placeholder="Buscar...">
+          <button class="search-button"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
     <table>
-      <thead> <!-- títulos de columna -->
+      <thead>
         <tr>
           <th>Código</th>
           <th>Producto</th>
@@ -53,40 +43,34 @@
           <th>Existencia</th>
           <th>Acciones</th>
         </tr>
-      </thead> <!-- títulos de columna -->
-      <tbody> <!-- Los productos se agregarán aquí dinámicamente -->
+      </thead>
+      <tbody>
+        <!-- Los productos se agregarán aquí dinámicamente -->
         <tr>
-          <td>1221</td>
-          <td>Aceite de  oliva</td>
-          <td>$79.995</td>
-          <td>18 %</td>
-          <td>100</td>
-          <td>
-            <button class="btn-edit" id="btn-edit-1">Editar</button>
-            <button class="btn-delete" id="btn-delete-1">Eliminar</button>
-          </td>
-        </tr>
-        <tr>
-          <td>1222</td>
-          <td>Azucar Morena</td>
-          <td>$12.595</td>
-          <td>18 %</td>
-          <td>500</td>
-          <td>
-            <button class="btn-edit" id="btn-edit-2">Editar</button>
-            <button class="btn-delete" id="btn-delete-2">Eliminar</button>
-          </td>
-        </tr>
-        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr> <!-- vacía -->
-        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr> <!-- vacía -->
-        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr> <!-- vacía -->
-        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr> <!-- vacía -->
-        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr> <!-- vacía -->
-        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td><td></td></tr> <!-- vacía -->
-      </tbody> <!-- Los productos se agregarán aquí dinámicamente -->
+            <td>1221</td>
+            <td>Aceite de  oliva</td>
+            <td>$79.995</td>
+            <td>0.25</td>
+            <td>100</td>
+            <td>
+              <button id="btn-edit-1">Editar</button>
+              <button id="btn-delete-1">Eliminar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>1222</td>
+            <td>Azucar Morena</td>
+            <td>$12.595</td>
+            <td>0.25</td>
+            <td>500</td>
+            <td>
+              <button id="btn-edit-1">Editar</button>
+              <button id="btn-delete-1">Eliminar</button>
+            </td>
+          </tr>
+      </tbody>
     </table>
-  </div> <!-- product-table -->
-</div> <!-- fondo -->
+</div>
 </body>
 <!-- slider -->
 <script type="text/javascript" src="js/slider.js"></script>   <!-- slider -->                                                                                                                                                                                                                                                                       
