@@ -1,5 +1,5 @@
 #product-table {
-    /* width: 400px; */
+    width: 400px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -29,27 +29,30 @@
 }
 
 #product-table button {
-  padding: 5px 20px;
+  padding: 5px 10px;
   border: none;
-  background-color: black;
+  background-color: #4CAF50;
   color: white;
   cursor: pointer;
-}
-#product-table button:hover {
-  background-color: #d43226;
 }
 
 #product-table button + button {
   margin-left: 10px;
   background-color: #f44336;
 }
-#product-table button + button:hover {
-  background-color: black;
-}
 
+#product-table #btn-add-1 {
+    margin-right: 595px;
+    background-color: #407ad1;
+    color: white;
+  }
 
 table {
     margin: 0 auto;
+}
+
+h1{
+    text-align: center;
 }
 
 .header {
@@ -59,7 +62,15 @@ table {
     background-color:  #fff;
     padding: 20px;
   }
-    
+  
+  .add-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
   .search-container {
     display: flex;
     align-items: center;
@@ -75,6 +86,6 @@ table {
     padding: 10px 20px;
     border: none;
     border-radius: 0 10px 10px 0;
-    /* background-color: #000000; */
+    background-color: #ddd;
     cursor: pointer;
   }

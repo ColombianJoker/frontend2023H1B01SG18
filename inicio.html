@@ -4,15 +4,39 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="styles/general.css" rel="stylesheet" type="text/css">
+    <link href="styles/adminproductos.css" rel="stylesheet" type="text/css">
     <title>Market18 - Inicio</title>
   </head>
   <body>
     <!-- Slider, imágenes -->
-    <div class="banner">
-      <img id="logo" src="images/Market18_B.png" alt="Market18"/>
+    <div class="slider">
+      <img id="img-1" src="images/Market18_B.png" alt="Market18"/>
+      <img id="img-2" src="images/Market18_Bogota.jpg" alt="Bogota"/>
+      <img id="img-3" src="images/Market18_Medellin.jpg" alt="Bogota"/>
+      <img id="img-4" src="images/Market18_Cali.jpg" alt="Bogota"/>
+      <img id="img-5" src="images/Market18_Barranquilla.jpg" alt="Bogota"/>
     </div>
     <!-- Slider, imágenes -->
-    <div id="fondo">
+    <!-- Slider, flechas -->
+    <div class="navigation-button">
+      <span class="dot active" onclick="changeSlide(0)"></span>
+      <span class="dot"        onclick="changeSlide(1)"></span>
+      <span class="dot"        onclick="changeSlide(2)"></span>
+      <span class="dot"        onclick="changeSlide(3)"></span>
+      <span class="dot"        onclick="changeSlide(4)"></span>
+    </div>
+    <!-- Slider, flechas -->
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Administración</a></li>
+        <li><a href="#">Contactanos</a></li>
+      </ul>
+      </nav>
+    <!-- Slider, imágenes -->
+    <!-- <div id="fondo">
       <div class="container">
         <h1>Los mejores productos, siempre!</h1>
         <div class="homeproducts">
@@ -20,15 +44,77 @@
           <img id="img-2" src="images/1004_111.jpg" alt="Nescafé 1004_111" />
           <img id="img-3" src="images/1009_202.jpg" alt="Ron Viejo de Caldas 1009_202" />
           <img id="img-4" src="images/1016_110.jpg" alt="Café Tostao 1016_110" />
-        </div> <!-- homeproducts -->
-        <div class="navigation-button">
+        </div> homeproducts -->
+        <!-- <div class="navigation-button">
           <span class="dot active" onclick="changeSlide(0)"></span>
           <span class="dot"        onclick="changeSlide(1)"></span>
           <span class="dot"        onclick="changeSlide(2)"></span>
           <span class="dot"        onclick="changeSlide(3)"></span>
-        </div> <!-- navigation-button -->
-      </div> <!-- container -->
-    </div> <!-- fondo -->
+        </div>  navigation-button -->
+      <!--</div> container -->
+    <!--</div>fondo --> 
+    <div class="contenedor-mosaico">
+      <div class="producto">
+          <img src="images/1001_108.jpg" alt="Producto 1">
+          <h3>Leche Entera Alquería</h3>
+          <p>Leche Entera Fresca Bolsa Alqueria 1300 ml</p>
+          <button class="home-comprar-but" type="submit">Comprar a: $4.500</button>
+      </div>
+      <div class="producto">
+          <img src="images/1016_110.jpg" alt="Producto 2">
+          <h3>Café Supremo Tostao</h3>
+          <p>Cafe Tostado Mol Supremo TOSTAO 454 gr</p>
+          <button class="home-comprar-but" type="submit">Comprar a: $15.500</button>
+      </div>
+      <div class="producto">
+          <img src="images/1003_109.jpg" alt="Producto 3">
+          <h3>Café Granulado Tostao</h3>
+          <p>Cafe Granulado Instantaneo TOSTAO 170 gr</p>
+          <button class="home-comprar-but" type="submit">Comprar a: $12.000</button>
+      </div>
+      <div class="producto">
+          <img src="images/1004_111.jpg" alt="Producto 4">
+          <h3>Café en Polvo Nescafé</h3>
+          <p>Cafe Instantaneo Tradición  NESCAFE 170 gr</p>
+          <button class="home-comprar-but" type="submit">Comprar a: $16.000</button>
+      </div>
+      <div class="producto">
+          <img src="images/1005_201.jpg" alt="Producto 5">
+          <h3>Ron Santafé</h3>
+          <p>Ron Botella Santafé 750 ml</p>
+          <button class="home-comprar-but" type="submit">Comprar a: $80.000</button>
+      </div>
+      <div class="producto">
+          <img src="images/1006_105.jpg" alt="Producto 6">
+          <h3>Harina Pan Maiz Dulce</h3>
+          <p>HARINA DULCE AMARILLA PAN 1000 gr</p>
+          <button class="home-comprar-but" type="submit">Comprar a: $25.000</button>
+      </div>
+      <div class="producto">
+        <img src="images/1007_104.jpg" alt="Producto 7">
+        <h3>Harina Pan Maiz Blanco</h3>
+        <p>HARINA MAIZ BLANCA PAN 500 gr</p>
+        <button class="home-comprar-but" type="submit">Comprar a: $23.500</button>
+    </div>
+    <div class="producto">
+        <img src="images/1008_203.jpg" alt="Producto 8">
+        <h3>Aguardiente Nectar</h3>
+        <p>Aguardiente Caja Nectar 500 ml</p>
+        <button class="home-comprar-but" type="submit">Comprar a: $75.300</button>
+    </div>
+    <div class="producto">
+        <img src="images/1009_202.jpg" alt="Producto 9">
+        <h3>Ron Caldas</h3>
+        <p>Ron Botella Viejo de Caldas 750 ml</p>
+        <button class="home-comprar-but" type="submit">Comprar a: $120.000</button>
+    </div>
+    <div class="producto">
+        <img src="images/1010_112.jpg" alt="Producto 10">
+        <h3>Café Sello Rojo</h3>
+        <p>Café tradicional Sello Rojo 500 ml</p>
+        <button class="home-comprar-but" type="submit">Comprar a: $35.000</button>
+    </div>
+    </div>
     <footer>
       <div class="left-column">
         <p><a href="#">Términos y condiciones</a></p>
