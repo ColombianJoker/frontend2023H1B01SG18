@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="styles/adminProductos.css" rel="stylesheet" type="text/css">
+  <link href="styles/general.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="slider">
+    <img id="img-1" src="images/Market18_B.png" alt="Market18"/>
+    <img id="img-2" src="images/Market18_Bogota.jpg" alt="Bogota"/>
+    <img id="img-3" src="images/Market18_Medellin.jpg" alt="Bogota"/>
+    <img id="img-4" src="images/Market18_Cali.jpg" alt="Bogota"/>
+    <img id="img-5" src="images/Market18_Barranquilla.jpg" alt="Bogota"/>
+  </div>
+  <!-- Slider, imágenes -->
+  <!-- Slider, flechas -->
+  <div class="navigation-button">
+    <span class="dot active" onclick="changeSlide(0)"></span>
+    <span class="dot"        onclick="changeSlide(1)"></span>
+    <span class="dot"        onclick="changeSlide(2)"></span>
+    <span class="dot"        onclick="changeSlide(3)"></span>
+    <span class="dot"        onclick="changeSlide(4)"></span>
+  </div>
+  <!-- Slider, flechas -->
+    <h1>Administación de productos</h1>
+<div id="product-table">
+    <div class="header">
+        <button class="add-button">Agregar</button>
+        <div class="search-container">
+          <input type="text" placeholder="Buscar...">
+          <button class="search-button"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Producto</th>
+          <th>Valor</th>
+          <th>Descuento</th>
+          <th>Existencia</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Los productos se agregarán aquí dinámicamente -->
+        <tr>
+            <td>1221</td>
+            <td>Aceite de  oliva</td>
+            <td>$79.995</td>
+            <td>0.25</td>
+            <td>100</td>
+            <td>
+              <button id="btn-edit-1">Editar</button>
+              <button id="btn-delete-1">Eliminar</button>
+            </td>
+          </tr>
+          <tr>
+            <td>1222</td>
+            <td>Azucar Morena</td>
+            <td>$12.595</td>
+            <td>0.25</td>
+            <td>500</td>
+            <td>
+              <button id="btn-edit-1">Editar</button>
+              <button id="btn-delete-1">Eliminar</button>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+</div>
+</body>
+<!-- slider -->
+<script type="text/javascript" src="js/slider.js"></script>   <!-- slider -->                                                                                                                                                                                                                                                                       
+<footer >
+    <div class="left-column">
+      <p><a href="#">Términos y condiciones</a></p>
+      <p><a href="#">Política de privacidad</a></p>
+      <p>&copy; 2023 Todos los derechos reservados</p>
+    </div>
+    <div class="right-column">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <div class="contact-info">
+        <p>Información de contacto</p>
+        <p>Teléfono: (123) 456-7890</p>
+        <p>Email: info@miempresa.com</p>
+      </div>
+    </div>
+  </footer>
+</html>
